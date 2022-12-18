@@ -1,0 +1,654 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    *background-color:white;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid black;
+    width: 90%;
+    *min-width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+}
+#navbar li{
+    *border: 1px solid red;
+    margin-right: 1%;
+}
+#navbar ul li a{
+    *border: 1px solid goldenrod;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.slideshow-container{
+    width: 90%;
+    *min-width: 200px;
+    height: 400px;
+    margin: auto;
+    margin-top: 4%;
+    *border: 1px solid red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.myslides{
+    *display: none;
+}
+.punto{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.100);
+    background-color: rgba(255, 192, 203, 0.100);
+    border-radius: 95%;
+    display: inline-flex;
+    position: relative;
+    float: right;
+    top: 278px;
+    margin-right: 0.2%;
+}
+.punto:hover{
+    border-color: black;
+    background-color: pink;
+    transition: 4s;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+.pips{
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+}
+
+.lanzamientos{
+    width: 90%;
+    height: 100%;
+    *border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    *justify-content: space-around;
+    margin: auto;
+    margin-top: 10%;
+}
+.ntitu{
+    width: 100%;
+    height: 40px;
+    *border: 1px solid green;
+    display: flex;
+    *justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.ngenero{
+    width: 100%;
+    height: 40px;
+    *border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+}
+.nnuevos{
+    width: 100%;
+    height: 100%;
+    *border: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+    *justify-content: space-around;
+}
+.nuevos{
+    width: 250px;
+    height: 300px;
+    *border: 1px solid red;
+    *margin-top: 1%;
+    *margin-bottom: 1%;
+    margin-right: 2.89%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.nuevoartista{
+    width: 230px;
+    height: 230px;
+    border: 0.5px solid rgba(0, 0, 0, 0.300);
+    border-radius: 10px;
+    margin-top: 1%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px 5px 0px;
+}
+.nuevoartista:hover{
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.450) 3px 3px 5px 0px;
+    border-color: rgba(0, 0, 0, 0.900);
+    transition: 1s;
+}
+#nuevo1{
+    background-image: url(/pics/as\ it\ was.jfif);
+}
+#nuevo2{
+    background-image: url(/pics/anti\ hero.jpg);
+}
+#nuevo3{
+    background-image: url(/pics/miss\ you.jfif);
+}
+#nuevo4{
+    background-image: url(/pics/bad\ habit.jfif);
+}
+#nuevo5{
+    background-image: url(/pics/goosebumps.png);
+}
+#nuevo6{
+    background-image: url(/pics/donda.jpg);
+}
+#nuevo7{
+    background-image: url(/pics/earfquake.jpg);
+}
+#nuevo8{
+    background-image: url(/pics/godsplan.jpg);
+}
+#nuevo9{
+    background-image: url(/pics/say\ so.jfif);
+}
+#nuevo10{
+    background-image: url(/pics/shes\ a\ baby.webp);
+}
+#nuevo11{
+    background-image: url(/pics/under\ the\ influence.jpg);
+}
+#nuevo12{
+    background-image: url(/pics/heartbreak\ anniversary.webp);
+}
+.nuevotitulo{
+    width: 80%;
+    height: 20px;
+    *border: 1px solid black;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    display: flex;
+    position: relative;
+    left:7%;
+    align-self: flex-start;
+    align-items: center;
+}
+.enlace33{
+    text-decoration: none;
+    color: black;
+}
+.vermas{
+    width: 70px;
+    height: 20px;
+    *border: 1px solid cyan;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    *position: relative;
+}
+.vermas button{
+    color: rgba(0, 0, 0, 0.200);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.vermas button:hover{
+    color: rgba(0, 0, 0, 1);
+    transition: 1.5s;
+}
+.cargarmas{
+    width: 100%;
+    height: 30px;
+    *border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.cargarmas button{
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cargarmas button h1{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.200);
+}
+.cargarmas button h1:hover{
+    color: rgba(0, 0, 0, 1);
+    transition: 1.5s;
+}
+#hideshow{
+    display: none;
+}
+
+
+.playlistitulo{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    *border: 1px solid black;
+}
+.playlistitulo1{
+    width: 90%;
+    height:30px;
+    *border: 1px solid green;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1%;
+}
+.playliscontenedor{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 0.5%;
+    *border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    *justify-content: space-around;
+}
+.plcontenedor2{
+    width: 19.5%;
+    min-width: 200px;
+    height: 250px;
+    *border: 1px solid cyan;
+    padding: 1% 0%;
+    margin-right: 0%;
+    display: flex;
+    flex-flow: column;
+}
+.plfotoc{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+#navidad1{
+    background-image: url(/pics/navidad1.webp);
+}
+#navidad2{
+    background-image: url(/pics/navidad2.jpg);
+}
+#navidad3{
+    background-image: url(/pics/navidad3.jpg);
+}
+#navidad4{
+    background-image: url(/pics/navidad4.jpg);
+}
+#lofi1{
+    background-image: url(/pics/lofi1.gif);
+}
+#lofi2{
+    background-image: url(/pics/lofi2.gif);
+}
+#lofi3{
+    background-image: url(/pics/lofi3.gif);
+}
+#lofi4{
+    background-image: url(/pics/lofi4.gif);
+}
+#lofi5{
+    background-image: url(/pics/lofi5.gif);
+}
+#kpop1{
+    background-image: url(/pics/kpop1.jpg);
+}
+#kpop2{
+    background-image: url(/pics/kpop2.webp);
+}
+#kpop3{
+    background-image: url(/pics/kpop3.jpg);
+}
+#kpop4{
+    background-image: url(/pics/kpop4.jfif);
+}
+.plnombre{
+    width: 90%;
+    height: 20px;
+    *border: 1px solid gold;
+    display: flex;;
+    align-items: center;
+    position: relative;
+    left: 2%;
+}
+.plmas{
+    width:2%;
+    height: 50px;
+    *border: 1px solid cyan;
+    align-self: center;
+}
+.plmasmas{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.050;
+}
+.plmasmas:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+    opacity: 0.6;
+    transition: 1.5s;
+}
+.plmasmas img{
+    width:100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.topalbums{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    *border: 1px solid green;
+}
+
+.contenedor{
+    *border: 1px solid pink;
+    margin: auto;
+    margin-bottom: 0.2%;
+    *padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    min-width: 700px;
+    height: 100%;
+    *height: 350px;
+    flex-direction: row;
+}
+.foto{
+    width: 300px;
+    height: 320PX;
+    *border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    *margin-right: 10px;
+}
+
+.pic{
+    width: 90%;
+    height: 85%;
+    *border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 0;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+/* ALBUMES */
+#album1{
+    background-image: url(/5/how\ i\'m\ feeling_Lauv.webp);
+}
+#album2{
+    background-image: url(/5/Justin_Bieber_-_Changes.png);
+}
+#album3{
+    background-image: url(/5/harryshouse.png);
+}
+#album4{
+    background-image: url(/5/oliviarodrigosour.jpg);
+}
+#album5{
+    background-image: url(/5/taylorswiftlover.webp);
+}
+#futurenostalgia{
+    background-image: url(/pics/futurenostalgia2.webp);
+}
+#romance{
+    background-image: url(/pics/romance1.1.jpg);
+}
+#aqualung{
+    background-image: url(/pics/aqualung.jfif);
+}
+#theonlyep{
+    background-image: url(/pics/the\ only\ ep.webp);
+}
+/*FINAL IMAGENES ALBUM*/
+.cr{
+    width: 40%;
+    height: 20px;
+    *border: 1px solid red;
+    *margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 2%;
+    bottom: 3%;
+}
+
+.descripcion{
+    width: 35%;
+    min-width: 300px;
+    height: 290PX;
+    *border: 1px solid black;
+    margin-right: 1%;
+}
+.titulod{
+    width: 100%;
+    height: 10%;
+    *border: 1px solid red;
+    position: relative;
+    *top: 8%;
+    margin-top: 4.5%;
+}
+.generod{
+    width: 100%;
+    height: 7%;
+    *border: 1px solid green;
+}
+.generod h4{
+    color: rgba(0, 0, 0, 0.800);
+    font-size: 0.9rem;
+}
+.cancionesd{
+    width: 100%;
+    height: 62%;
+    *border: 1px solid green;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    margin-top: 4%;
+    opacity: 0.5;
+}
+.cancionesd:hover{
+    overflow-y:auto;
+}
+.cancionesd::-webkit-scrollbar{
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0.050);
+    border-radius: 10px;
+    width: 10px;
+}
+.cancionesd::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 192, 203, 0.500);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cancionesd span{
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+}
+.audio{
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    *border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+}
+.reproductor{
+    width: 100%;
+    height: 11.1%;
+    *border: 1px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*CAJA GENERAL VIDEOS*/ 
+.topvideos{
+    width: 90%;
+    height: 100%;
+    *border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    flex-flow: column;
+}
+/*VIDEOS TOP*/ 
+.topvideostitulo{
+    width: 100%;
+    height: 40px;
+    *border: 1px solid red;
+    margin-bottom: 2%;
+} 
+/*CAJA DE LOS VIDEOS*/ 
+.topvideos2{
+    width: 100%;
+    height: 100%;
+    *border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+/*CAJA ELEMENTOS VIDEO*/ 
+.cajavideos{
+    width: 500px;
+    height: 100%;
+    *border: 1px solid green;
+    margin-bottom: 3%;
+}
+/*CAJA REPRODUCTOR VIDEO*/ 
+.tvideos{
+    width: 100%;
+    height: 280px;
+    *border: 1px solid salmon;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.tvideos video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+/*CAJA TITULO DEL VIDEO*/ 
+.nvideos{
+    width: 100%;
+    height: 100%;
+    *border: 1px solid yellow;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#footer1{
+    height: 100%;
+    width: 90%;
+    min-width: 400px;
+    *background-color: aqua;
+    align-items: center;
+    padding: 0.5%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#textofooter{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    *border: 1px solid green;
+    margin: auto;
+}
+#textofooter h4{
+    color: black;
+}
+#redesfooter{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 400px;
+    height: 40px;
+    *border: 1px solid red;
+    align-items: center;
+    margin: auto;
+}
+#redesfooter a{
+    width: 45px;
+    height: 40px;
+    *border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#instagram{
+    width: 70%;
+    height: 70%;
+}
+#spotify{
+    width: 70%;
+    height: 70%;
+}
+#soundcloud{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+
+/* RESPONSIVE MediaQuery*/
+
+@media only screen and (max-width:768px) {
+    .foto{
+        
+    }
+    .audio{
+        
+    }
+}
